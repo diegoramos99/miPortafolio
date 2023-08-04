@@ -1,52 +1,70 @@
 body {
     background-color: #F2EC7E;
 }
-
 /*CSS para los estilos del navegador*/
 .navMobil {
     display: none;
 }
-
-@media (max-width: 640px) {
+@media (max-width: 1080px) {
     .nav {
         display: none;
-
     }
-
     .navMobil {
+        background-color: transparent;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: start;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         overflow: hidden;
     }
-.li{
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.ul{
-    background-color: #b4bb547c;
-}
-.btn-primary{
-    background: transparent;
-}
-.bi-list{
-    color: #000000;
-    font-size: x-large;
-}
-
-   
-
+    .li {
+      
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        text-decoration: underline black;
+    }
+    .menu {
+        background-color: #e0d14b;
+        position: absolute;
+        top: -350px;
+        width: 100%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .i:hover+.menu {
+        top: -10px;
+        transition: top 2s;
+    }
+    .menu:hover {
+        background-color: #e0d14b;
+        transition: top 2s;
+    }
+    li {
+        color: #000000;
+        width: 100%;
+        margin-left: 10px;
+        list-style: none;
+        font-size: x-large;
+        
+    }
     
-
-   
-
+    .btn-primary {
+        background: transparent;
+    }
+    .bi-list {
+        color: #000000;
+        font-size: xx-large;
+    }
 }
-
 ul {
     background-color: #F2EC7E;
     display: flex;
@@ -54,49 +72,42 @@ ul {
     justify-content: end;
     width: 90vw;
 }
-
 .nav ul a {
+    text-decoration: none;
     margin: 1% 3%;
-    font-size: larger;
+    font-size: xx-large;
     font-weight: 500;
     color: #161515;
 }
-
 .nav ul li:hover {
-    
     cursor: pointer;
     color: #885611;
     text-decoration: underline;
 }
-
 .container-fluid {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
 /* CSS para la presentacion*/
 .inicio {
-    border: 2px solid red;
-    background-color: #F2EC7E;
+    border: 2px solid rgb(185, 175, 175);
+    background-color: #fff64b77;
     height: 60vh;
     width: 80%;
     margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
-
+    box-shadow: 2px 2px 22px;
 }
-
 @media (max-width: 541px) {
     .inicio {
         width: 100%;
     }
 }
-
 .inicio_presentacion {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -104,10 +115,10 @@ ul {
     justify-content: center;
     width: 50%;
     min-width: 400px;
+    
 }
-
 .inicio_foto {
-    border: 3px solid rgb(0, 4, 228);
+    /* border: 3px solid rgb(0, 4, 228); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,11 +128,10 @@ ul {
     min-width: 390px;
     min-height: 300px;
     margin: auto;
-
 }
-
 .inicio_foto img {
-    border: 2px solid black;
+    border: 12px  rgba(184, 184, 54, 0.952);
+  border-style: ridge ;
     height: 100%;
     width: auto;
     object-fit: contain;
@@ -137,6 +147,7 @@ section.sobreMi {
     align-items: center;
     width: 100vw;
     height: 70vh;
+    
 }
 
 .sectionSobreMi {
@@ -154,13 +165,14 @@ section.sobreMi {
     height: 35%;
     text-align: center;
     margin-bottom: 0%;
+    box-shadow: 2px 2px 22px;
 
 
 }
 
 /* CSS para el cuadro de herramientas*/
 .misHerramientas {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +195,7 @@ section.sobreMi {
 }
 
 .containerMisHerramientas {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-color: #ece78c;
     box-shadow: 3px 3px 5px #545353;
     display: flex;
@@ -224,6 +236,7 @@ section.sobreMi {
 .titulosMisHerramientas {
     height: 20%;
     width: auto;
+
 }
 
 .herramientasDisponibles {
@@ -246,14 +259,14 @@ section.sobreMi {
 
 .herramientas img {
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 .proyectos {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-color: #D9B01C;
 
     display: flex;
@@ -262,7 +275,7 @@ section.sobreMi {
 }
 
 .container_proyectos {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     display: flex;
     flex-direction: column;
@@ -273,14 +286,15 @@ section.sobreMi {
 }
 
 .tituloProyectos {
+    margin-top:20px ;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
 
 .fila {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -293,7 +307,6 @@ section.sobreMi {
 
 .card {
     margin: 30px;
-    border: 2px solid violet;
     width: 35%;
     height: auto;
     overflow: hidden;
@@ -301,9 +314,10 @@ section.sobreMi {
     min-width: 300px;
     min-height: 300px;
 }
+
 @media (max-width: 1067px) {
-    .card{
-      border-radius: 10%;
+    .card {
+        border-radius: 10%;
     }
 
 }
@@ -325,14 +339,15 @@ section.sobreMi {
 
 .card:hover>.descripcionProyecto {
 
+    padding-bottom: 400px;
+    background-color: #5e5d5d73;
     text-align: center;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     opacity: 1;
-    top: 0%;
+    top: 50%;
     transition: top 2.5s;
 
 
@@ -360,7 +375,7 @@ section.sobreMi {
 
 .containerContacto {
     background-color: #c6a11bb2;
-    border: 2px solid rgb(131, 130, 130);
+    /* border: 2px solid rgb(131, 130, 130); */
     width: 50%;
     height: auto;
     padding: 3%;
@@ -397,7 +412,7 @@ section.sobreMi {
 .containerForm {
     display: flex;
     justify-content: space-around;
-    border: 2px solid rgb(11, 216, 90);
+    /* border: 2px solid rgb(11, 216, 90); */
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -434,7 +449,7 @@ form .input[type="submit"] {
 }
 
 .imgForm {
-    border: 3px solid rgb(84, 10, 223);
+    /* border: 3px solid rgb(84, 10, 223); */
     width: 50%;
     min-height: auto;
 }
