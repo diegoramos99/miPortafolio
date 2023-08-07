@@ -30,11 +30,11 @@ body {
         text-decoration: underline black;
     }
     .menu {
+        /* border: 2px solid green; */
         background-color: #e0d14b;
         position: absolute;
         top: -350px;
         width: 100%;
-        /* border: 2px solid green; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -54,6 +54,7 @@ body {
         margin-left: 10px;
         list-style: none;
         font-size: x-large;
+        
         
     }
     
@@ -78,6 +79,7 @@ ul {
     font-size: xx-large;
     font-weight: 500;
     color: #161515;
+    font-family: 'PT Serif', serif;
 }
 .nav ul li:hover {
     cursor: pointer;
@@ -92,7 +94,7 @@ ul {
 }
 /* CSS para la presentacion*/
 .inicio {
-    border: 2px solid rgb(185, 175, 175);
+    /* border: 2px solid rgb(185, 175, 175); */
     background-color: #fff64b77;
     height: 60vh;
     width: 80%;
@@ -106,15 +108,19 @@ ul {
         width: 100%;
     }
 }
+
 .inicio_presentacion {
     /* border: 2px solid green; */
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
     min-width: 400px;
+    font-size: x-large  ;
+    font-family: 'Trykker', serif;
+
     
 }
 .inicio_foto {
@@ -130,90 +136,57 @@ ul {
     margin: auto;
 }
 .inicio_foto img {
-    border: 12px  rgba(184, 184, 54, 0.952);
+    /* border: 12px  rgba(184, 184, 54, 0.952); */
   border-style: ridge ;
     height: 100%;
     width: auto;
     object-fit: contain;
     border-radius: 50%;
+    box-shadow: 0 0 51px;
 
 
 }
-
-section.sobreMi {
+/* CSS PARA MI PRESENTACION  */
+section .sobreMi {
+    /* border: 2px solid rgb(4, 40, 183); */
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
+      font-family: 'M PLUS 1', sans-serif;
+      font-weight: lighter;
+
+
     
 }
-
-.sectionSobreMi {
-    height: 100vh;
-
+/* font family */
+.sobreMi_texto h3{
+    /* border: 1px solid green; */
+    font-family: 'Copse', serif;
+}
+.sobreMi_texto h4{
+    /* border: 1px solid green; */
+    font-family: 'Trykker', serif;
+    text-align: center;
 }
 
-.containerSobreMi {
 
+.containerSobreMi {
+    /* border: 2px solid rgb(210, 4, 210); */
+    background-color: #D9B01C;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: #D9B01C;
-    height: 35%;
+    height:auto;
     text-align: center;
-    margin-bottom: 0%;
+  
     box-shadow: 2px 2px 22px;
+    
 
-
-}
-
-/* CSS para el cuadro de herramientas*/
-.misHerramientas {
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: 150%;
-    position: relative;
-}
-
-@media (max-width: 877px) {
-    .misHerramientas {
-        max-height: 500px;
-    }
-}
-
-@media (max-width: 514px) {
-    .misHerramientas {
-        max-height: 450px;
-    }
-}
-
-.containerMisHerramientas {
-    /* border: 2px solid green; */
-    background-color: #ece78c;
-    box-shadow: 3px 3px 5px #545353;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-    position: relative;
-    max-height: 600px;
-
-
-
-}
-
-.ContenidoSobreMi {
-    padding: 1%;
 
 }
 
@@ -233,44 +206,120 @@ section.sobreMi {
 
 }
 
-.titulosMisHerramientas {
-    height: 20%;
-    width: auto;
+/* CSS para el cuadro de herramientas*/
+.sectionMisHerramientas{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    width: 100vw;
+} 
+.misHerramientas {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 50%;
+height: 45vh;
+    position: relative;
+}
+@media (max-width: 1050px) {
+    .misHerramientas {
+        width: 80%;
+        min-height: 50vh;
+    }
+}
+@media (max-width: 877px) {
+    .misHerramientas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 514px) {
+    .misHerramientas {
+       width: 100%;
+    }
+}
+
+.containerMisHerramientas {
+    /* border: 22px solid green; */
+    background-color: #fff64b77;
+    box-shadow: 3px 3px 5px #545353;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content:center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
 
 }
 
+.titulosMisHerramientas{
+    /* border: 2px solid rgb(17, 225, 180); */
+    text-align:     center;
+    margin-bottom: 2%;
+ 
+}
+.titulosMisHerramientas h3{
+    font-weight: 700;
+    font-family: 'Copse', serif;
+}
+
+
+
 .herramientasDisponibles {
+
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 80%;
-    justify-content: space-around;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+
+   
 
 }
 
 .herramientas {
+  
 
     position: relative;
-    margin: 2%;
-    width: 35%;
-    height: 25%;
+width: 30%;
+height: 30%;
+margin-bottom:  15px;
+
+}
+
+
+.herramientas:hover >img{
+    box-shadow: 1px 2px 10px;
+    transform: rotatey(360deg);
+    transition: transform 3s;
+    cursor: pointer;
+
 }
 
 .herramientas img {
 
-    /* border: 2px solid black; */
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     object-fit: contain;
+
 }
 
 .proyectos {
     /* border: 2px solid green; */
     background-color: #D9B01C;
-
+    border-radius: 5px;
     display: flex;
     height: auto;
+    box-shadow: 1px 1px 22px;
+    margin: 0;
 
 }
 
@@ -286,9 +335,10 @@ section.sobreMi {
 }
 
 .tituloProyectos {
+    /* border: 2px solid black; */
     margin-top:20px ;
     text-align: center;
-    /* border: 2px solid black; */
+    font-family: 'Copse', serif;
 }
 
 
@@ -374,8 +424,8 @@ section.sobreMi {
 }
 
 .containerContacto {
-    background-color: #c6a11bb2;
     /* border: 2px solid rgb(131, 130, 130); */
+    background-color: #c6a11bb2;
     width: 50%;
     height: auto;
     padding: 3%;
@@ -410,9 +460,9 @@ section.sobreMi {
 }
 
 .containerForm {
+    /* border: 2px solid rgb(11, 216, 90); */
     display: flex;
     justify-content: space-around;
-    /* border: 2px solid rgb(11, 216, 90); */
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -435,8 +485,8 @@ form .input {
 }
 
 form .input[type="submit"] {
-    background-color: rgb(189, 95, 32);
     border: none;
+    background-color: rgb(189, 95, 32);
 }
 
 .hijosForm {
@@ -458,6 +508,18 @@ form .input[type="submit"] {
     border-radius: 50%;
     width: 100%;
     object-fit: contain;
+    
+ 
+}
+.imgForm img:last-child{
+    animation: girar 10s alternate infinite;
+
+}
+@keyframes girar {
+   
+    100%{
+        transform: rotatey(720deg);
+    }
 }
 
 
