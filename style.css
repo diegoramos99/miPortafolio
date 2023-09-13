@@ -1,14 +1,43 @@
+
 body {
-    background-color: #F2EC7E;
+    /* background-color: #ffffff; */
+    background: #48e
+}
+
+.fuente {
+    /* border: 1px solid green; */
+    font-family: 'Trykker', serif;
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+    color: #ffffff;
+    
+}
+
+.fondo{
+    background-color: #0012B8;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 45, 246);
+}
+.border-radius-20{
+    border-radius: 20px;
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 /*CSS para los estilos del navegador*/
 .navMobil {
     display: none;
 }
+
 @media (max-width: 1080px) {
     .nav {
         display: none;
     }
+
     .navMobil {
         background-color: transparent;
         width: 100%;
@@ -18,20 +47,23 @@ body {
         /* border: 2px solid red; */
         overflow: hidden;
     }
+
     .li {
-      
+
         margin: 15px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    a{
+
+    a {
         text-decoration: underline black;
     }
+
     .menu {
         /* border: 2px solid green; */
-        background-color: #e0d14b;
+        background-color: #3B48C3;
         position: absolute;
         top: -350px;
         width: 100%;
@@ -40,39 +72,45 @@ body {
         justify-content: flex-start;
         align-items: start;
     }
+
     .i:hover+.menu {
         top: -10px;
         transition: top 2s;
     }
+
     .menu:hover {
-        background-color: #e0d14b;
+
         transition: top 2s;
     }
+
     li {
         color: #000000;
         width: 100%;
         margin-left: 10px;
         list-style: none;
         font-size: x-large;
-        
-        
+
+
     }
-    
+
     .btn-primary {
         background: transparent;
     }
+
     .bi-list {
         color: #000000;
         font-size: xx-large;
     }
 }
+
 ul {
-    background-color: #F2EC7E;
+
     display: flex;
     list-style: none;
     justify-content: end;
     width: 90vw;
 }
+
 .nav ul a {
     text-decoration: none;
     margin: 1% 3%;
@@ -81,28 +119,42 @@ ul {
     color: #161515;
     font-family: 'PT Serif', serif;
 }
-.nav ul li:hover {
-    cursor: pointer;
-    color: #885611;
-    text-decoration: underline;
+
+.nav ul li{
+   padding: 10px;
+
 }
+.nav ul li:hover {
+    border-top-left-radius:50% ;
+    border-top-right-radius:50% ;
+    background-color: #2e42f5;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: underline; 
+    box-shadow: 0px 0px 10px rgb(66, 28, 192);
+
+}
+
 .container-fluid {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* CSS para la presentacion*/
 .inicio {
-    /* border: 2px solid rgb(185, 175, 175); */
-    background-color: #fff64b77;
-    height: 60vh;
+    /* border: 5px solid rgb(214, 39, 39); */
+   
+    height: 80vh;
     width: 80%;
     margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 2px 2px 22px;
+    overflow: hidden;
 }
+
 @media (max-width: 541px) {
     .inicio {
         width: 100%;
@@ -111,83 +163,77 @@ ul {
 
 .inicio_presentacion {
     /* border: 2px solid green; */
-    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    min-width: 400px;
-    font-size: x-large  ;
-    font-family: 'Trykker', serif;
+    min-width: 40%;
 
-    
+
 }
+
 .inicio_foto {
-    /* border: 3px solid rgb(0, 4, 228); */
+    /* border: 3px solid rgb(11, 206, 70); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 60%;
-    min-width: 390px;
+    height: 350px;
+    min-width: 300px;
     min-height: 300px;
     margin: auto;
+   
 }
+
 .inicio_foto img {
-    /* border: 12px  rgba(184, 184, 54, 0.952); */
-  border-style: ridge ;
+    border: 12px rgb(42, 23, 255);
+    border-style: ridge;
     height: 100%;
-    width: auto;
+    min-height: auto;
     object-fit: contain;
     border-radius: 50%;
-    box-shadow: 0 0 51px;
+    box-shadow: 0px 0px 11px white;
 
 
 }
+
 /* CSS PARA MI PRESENTACION  */
 section .sobreMi {
-    /* border: 2px solid rgb(4, 40, 183); */
-   
+    /* border: 2px solid rgb(31, 228, 71); */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-      font-family: 'M PLUS 1', sans-serif;
-      font-weight: lighter;
+    height: 60vh;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: lighter;
 
 
-    
+
 }
+
 /* font family */
-.sobreMi_texto h3{
+.sobreMi_texto h3 {
     /* border: 1px solid green; */
     font-family: 'Copse', serif;
 }
-.sobreMi_texto h4{
-    /* border: 1px solid green; */
-    font-family: 'Trykker', serif;
-    text-align: center;
-}
+
 
 
 .containerSobreMi {
-    /* border: 2px solid rgb(210, 4, 210); */
-    background-color: #D9B01C;
+
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height:auto;
-    text-align: center;
-  
-    box-shadow: 2px 2px 22px;
-    
-
-
+    height: auto;
+   
 }
 
 .imagen {
@@ -207,29 +253,33 @@ section .sobreMi {
 }
 
 /* CSS para el cuadro de herramientas*/
-.sectionMisHerramientas{
+.sectionMisHerramientas {
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     margin: 1%;
     width: 100vw;
-} 
+}
+
 .misHerramientas {
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-width: 50%;
-height: 45vh;
+    width: 50%;
+    height: 60vh;
     position: relative;
+    margin: 5%;
 }
+
 @media (max-width: 1050px) {
     .misHerramientas {
         width: 80%;
         min-height: 50vh;
     }
 }
+
 @media (max-width: 877px) {
     .misHerramientas {
         width: 100%;
@@ -238,18 +288,18 @@ height: 45vh;
 
 @media (max-width: 514px) {
     .misHerramientas {
-       width: 100%;
+        width: 100%;
     }
 }
 
 .containerMisHerramientas {
     /* border: 22px solid green; */
-    background-color: #fff64b77;
-    box-shadow: 3px 3px 5px #545353;
+
+    /* box-shadow: 3px 3px 5px #545353; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content:center;
+    align-content: center;
     position: relative;
     width: 100%;
     height: 100%;
@@ -258,13 +308,16 @@ height: 45vh;
 
 }
 
-.titulosMisHerramientas{
+.titulosMisHerramientas {
     /* border: 2px solid rgb(17, 225, 180); */
-    text-align:     center;
-    margin-bottom: 2%;
- 
+    text-align: center;
+    margin-bottom: 2% 0;
+    color: rgb(255, 255, 255);
+
+
 }
-.titulosMisHerramientas h3{
+
+.titulosMisHerramientas h3 {
     font-weight: 700;
     font-family: 'Copse', serif;
 }
@@ -280,32 +333,33 @@ height: 45vh;
     width: 100%;
     height: 90%;
 
-   
+    margin: auto;
 
 }
 
 .herramientas {
-  
+
 
     position: relative;
-width: 30%;
-height: 30%;
-margin-bottom:  15px;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 15px;
 
 }
 
 
-.herramientas:hover >img{
+.herramientas:hover>img {
     box-shadow: 1px 2px 10px;
     transform: rotatey(360deg);
     transition: transform 3s;
     cursor: pointer;
-
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px white;
 }
 
 .herramientas img {
 
-    border-radius: 50%;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -314,11 +368,10 @@ margin-bottom:  15px;
 
 .proyectos {
     /* border: 2px solid green; */
-    background-color: #D9B01C;
-    border-radius: 5px;
+
     display: flex;
     height: auto;
-    box-shadow: 1px 1px 22px;
+    /* box-shadow: 1px 1px 22px; */
     margin: 0;
 
 }
@@ -330,13 +383,14 @@ margin-bottom:  15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: auto;
     min-height: 150px;
 }
 
 .tituloProyectos {
     /* border: 2px solid black; */
-    margin-top:20px ;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Copse', serif;
 }
@@ -398,6 +452,7 @@ margin-bottom:  15px;
     align-items: center;
     opacity: 1;
     top: 50%;
+    width: 100%;
     transition: top 2.5s;
 
 
@@ -412,7 +467,7 @@ margin-bottom:  15px;
 
 /** CSS para el formuario**/
 .contacto {
-    background-color: #F2EC7E;
+    background-color: transparent;
     padding: 5%;
 
     width: auto;
@@ -423,9 +478,9 @@ margin-bottom:  15px;
 
 }
 
-.containerContacto {
+.containerContacto{
     /* border: 2px solid rgb(131, 130, 130); */
-    background-color: #c6a11bb2;
+
     width: 50%;
     height: auto;
     padding: 3%;
@@ -433,9 +488,10 @@ margin-bottom:  15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     min-width: 600px;
 
-    box-shadow: 10px 5px 15px;
+    /* box-shadow: 10px 5px 15px; */
 }
 
 @media (max-width: 1067px) {
@@ -450,14 +506,7 @@ margin-bottom:  15px;
     }
 }
 
-.flexContainer {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #444;
-    margin: 50px 30px;
-}
+
 
 .containerForm {
     /* border: 2px solid rgb(11, 216, 90); */
@@ -475,9 +524,9 @@ form .input {
     padding: 7px;
     margin: 6px 0;
     border: none;
-    border-bottom: 3px solid rgb(177, 73, 4);
+    border-bottom: 3px solid #0012B8;
     background-color: transparent;
-    color: #21241b;
+    color: #ffffff;
 }
 
 .form textarea {
@@ -485,8 +534,13 @@ form .input {
 }
 
 form .input[type="submit"] {
-    border: none;
-    background-color: rgb(189, 95, 32);
+    border: 1px solid white;
+    background-color: #020497;
+}
+form .input[type="submit"]:hover {
+    border: 1px double white;
+    background-color: #2e56f5;
+    box-shadow: 0px 0px 25px;
 }
 
 .hijosForm {
@@ -495,7 +549,8 @@ form .input[type="submit"] {
 
 .input:focus {
     outline: none;
-    background-color: #ac8e22;
+    background-color: #1100ff;
+
 }
 
 .imgForm {
@@ -508,16 +563,18 @@ form .input[type="submit"] {
     border-radius: 50%;
     width: 100%;
     object-fit: contain;
-    
- 
+
+
 }
-.imgForm img:last-child{
+
+.imgForm img:last-child {
     animation: girar 10s alternate infinite;
 
 }
+
 @keyframes girar {
-   
-    100%{
+
+    100% {
         transform: rotatey(720deg);
     }
 }

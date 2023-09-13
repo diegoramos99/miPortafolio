@@ -22,6 +22,9 @@
   <main>
     <div class="container-fluid">
       <div class="row nav">
+        <div class="col">
+          <img class="img" src="imagenes/nav-logo.jpg" alt="">
+        </div>
         <div class="col ">
           <ul>
             <a href="#acercaDeMi">
@@ -57,11 +60,13 @@
           </a> </div>
         </div>
          </div>
-      <section class="row inicio">
-        <div class="col inicio_presentacion">
-          <div><p><b>Estudiante de la UNLaM en la Tecnicatura de programación web y autodicta por naturaleza. <br>
+      <section class="row inicio fondo  border-radius-20">
+        <div class="col inicio_presentacion fuente">
+          <div><p>Estudiante de la UNLaM en la Tecnicatura de programación web y autodicta por naturaleza. <br>
             A la par de mi desarrollo universitario voy formandome de manera independiente con las distintas tecnologias
-          </b></p></div>
+        
+        </p>
+        </div>
           
         </div>
         <div class="col inicio_foto">
@@ -69,19 +74,19 @@
         </div>
       </section>
 
-      <section class="sectionSobreMi">
+      <section class="sectionSobreMi ">
         <div class="imagen"><img src="imagenes/hero-devices.svg" alt=""></div>
 
-        <div id="acercaDeMi" class="containerSobreMi">
+        <div id="acercaDeMi" class="containerSobreMi fondo  border-radius-20">
           <div class="row sobreMi">
-            <div class="sobreMi_texto">
+            <div class="sobreMi_texto fuente ">
               <h3>Hola soy Diego un gusto conocerte</h3>
-              <h4>Desde que tuve mi primer contacto con el mundo de la programacion me di cuenta que esto es para
+              <p>Desde que tuve mi primer contacto con el mundo de la programacion me di cuenta que esto es para
                 mi,constantemente
                 estoy en busca de nuevos conocimientos para el desarrollo de mi habilidades.<br>
                 Actualmente estoy en busca de mis primeras experiencias en el mundo laboral IT.<br>
-                Soy por naturaleza una persona curiosa,buscando siempre la manera de aumentar mi conocimientos y volcarlos en los proyectos que llevo a cavo.
-                Siempre busco la manera de volver mas eficiente mis trabajos y volverme aun mas eficaz.</h4>
+                Soy por naturaleza una persona curiosa,buscando siempre la manera de aumentar mi conocimientos y volcarlos en los proyectos que llevo a cabo.
+                Siempre busco la manera de volver mas eficiente mis trabajos y volverme aún mas eficaz.</p>
             </div>
 
           </div>
@@ -93,8 +98,8 @@
 
       </section>
       <section class="sectionMisHerramientas">
-        <div class="misHerramientas">
-          <div class="containerMisHerramientas">
+        <div class="misHerramientas fondo  border-radius-20">
+          <div class="containerMisHerramientas  border-radius-20">
             <div id="skill" class="row titulosMisHerramientas">
               <h3>herramientas que domino</h3>
             </div>
@@ -112,33 +117,33 @@
 
 
 
-      <section id="misProyectos" class="row proyectos">
+      <section id="misProyectos" class="row proyectos  border-radius-20">
 
-        <div class="container_proyectos">
-          <div class="tituloProyectos">
+        <div class="container_proyectos fondo  border-radius-20">
+          <div class="tituloProyectos fuente">
             <h2>proyectos realizados</h2>
             <h4>paginas web</h4>
           </div>
 
-          <div class="fila">
+          <div class="fila ">
 
             <div class="card ">
               <div class="imagenDeFondo">
-                <img src="imagenes/joyeria.png" alt="">
+                <img src="imagenes/mi-portafolio.jpg" alt="">
               </div>
               <div class="descripcionProyecto">
-                <h4>joyeria</h4>
-                <h5>pagina web de joyeria,proyecto del curso de Argentina Programa</h5>
+                <h4>mi Git de mi portafolio</h4>
+                <h5>te redirecciono a mi github donde encontraras todos mi proyectos</h5>
               </div>
 
             </div>
             <div class="card">
               <div class="imagenDeFondo">
-                <img src="imagenes/joyeria.png" alt="">
+                <img src="imagenes/trabajos.jpg" alt="">
               </div>
               <div class="descripcionProyecto">
-                <h4>joyeria</h4>
-                <h5>pagina web de joyeria,proyecto del curso de Argentina Programa</h5>
+                <h4>Tienda de Ropa</h4>
+                <h5>Landing page de un tienda de Ropa</h5>
               </div>
             </div>
 
@@ -167,21 +172,21 @@
 
       </section>
 
-      <section id="contacto" class="row contacto">
-        <div class="containerContacto">
+      <section id="contacto" class="row contacto ">
+        <div class="containerContacto fondo  border-radius-20">
           <h3>contacteme</h3>
-          <div class="containerForm">
-            <form action="" class="form hijosForm">
-              <div class="formInput"> <input class="input" type="text" placeholder="nombre"></br>
+          <div class="containerForm ">
+            <form action="" class="form hijosForm" name="formulario">
+              <div class="formInput"> <input class="input" type="text" placeholder="nombre" required></br>
               </div>
-              <div class="formInput"> <input class="input" type="text" placeholder="apellido"></br>
+              <div class="formInput"> <input class="input" type="text" placeholder="apellido" required></br>
               </div>
-              <div class="formInut"> <input class="input" type="email" placeholder="email"></br>
+              <div class="formInut"> <input class="input" type="email" placeholder="email" required></br>
               </div>
               <div class="formInput"> <textarea class="input" name="" id="" cols="30" rows="5"
                   placeholder="escriba su mensaje"></textarea><br>
               </div>
-              <button class="input" type="submit">enviar</button>
+              <button name="formulario" class="input" type="submit">enviar</button>
             </form>
             <div class="imgForm hijosForm">
               <img src="imagenes/mensaje.jpg" alt="">
