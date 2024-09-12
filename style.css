@@ -474,6 +474,7 @@ font-size: 16px;
         display: flex;
         flex-direction: column;
         transition: top 1.5s;
+        z-index: 100;
       
     }
     
@@ -526,6 +527,26 @@ font-size: 16px;
     }
 }
 @media (max-width: 824px) {
+    .presentacion_texto h1 span ,.titulo{
+        font-size: 36px;
+    }
+
+    .presentacion_texto h1 {
+
+        font-size: 24px;
+    }
+    .presentacion_texto p , .texto{
+       
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .proyecto {
+        height: auto;
+        width: 45%;
+        margin: 10px 10px;
+    }
     .proyecto_texto_redes {
         width: 100%;
         margin: .5rem 0;
@@ -536,4 +557,88 @@ font-size: 16px;
     .proyecto_texto_btn .btn {
         height: 2.5rem;
     }
+
+
+    .acercaDeMi{
+        height: auto;
+    }
+    .acercaDeMi_superior {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .acercaDeMi_superior .acercaDeMi_texto{
+        width: 100%;
+    }
+    .acercaDeMi_superior .acercaDeMi_img{
+        width: 100%;
+    }
+    .acercaDeMi_superior .acercaDeMi_img{
+        width: 100%;
+        height: 50%;
+    }
+    .acercaDeMi_superior .acercaDeMi_img{
+       object-fit: contain;
+    }
+    .acercaDeMi_inferior .acercaDeMi_btn{
+        width: 100%;
+    }
+    .form-container form button {
+        width: auto;
+        font-size: 18px;
+    }
+}
+@media (max-width: 524px) {
+
+    .presentacion_img {
+        border: 2px solid red;
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        opacity: .3;
+        z-index: 1;
+    }
+    .presentacion_img {
+        object-fit: contain;
+    }
+    .presentacion_texto {
+        border: 5px solid rgb(43, 255, 0);
+        height: 70%;
+        width: 90%;
+        display: flex;
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        
+    }
+    .acercaDeMi_inferior .acercaDeMi_btn button {
+        width: 70%;
+    }
+
+
+
+
+    .proyecto {
+width: 80%;  
+height: auto; 
+ }
+ .misProyectos_proyectos {
+    height:auto;
+}
+.contacto{
+    height: auto    ;
+}
+.form-container {
+   padding: 0;
+}
+.footer_col_3 .redes {
+   
+    display: flex;
+    flex-direction: column;
+  
+}
+.footer_col_2 {
+    border: 2px solid red;
+    width: 40%;
+}
 }
