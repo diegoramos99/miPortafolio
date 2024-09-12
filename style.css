@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .none{
     display: none;
 }
@@ -28,11 +31,11 @@
     font-size: 24px;
 }
 .container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: auto;
 }
 .nav{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     background-color: #7E50DB;
     justify-content: space-between;
@@ -66,7 +69,7 @@ margin: auto;
 margin-left: 2rem;
 }
 .menu {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 width: 60%;
 }
 .menu ol{
@@ -91,7 +94,7 @@ width: 60%;
     width: 100%;
 }
 .presentacion{
-    border: 2px solid rgb(0, 221, 255);
+    /* border: 2px solid rgb(0, 221, 255); */
     height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -99,7 +102,7 @@ width: 60%;
     width: 100%;
 }
 .presentacion_texto{
-    border: 5px solid rgb(43, 255, 0);
+    /* border: 5px solid rgb(43, 255, 0); */
     height: 70%;
     width: 50%;
     display: flex;
@@ -108,7 +111,7 @@ width: 60%;
     align-items: center;
 }
 .presentacion_texto_superior{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -117,7 +120,7 @@ width: 60%;
     align-items: center;
 }
 .presentacion_texto_inferior{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -139,7 +142,7 @@ width: 60%;
     font-size: 24px;
 }
 .presentacion_img{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 50%;
     height: 70%;
 }
@@ -150,12 +153,12 @@ width: 60%;
 }
 
 .acercaDeMi{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 100%;
     height:100vh;
 }
 .acercaDeMi_superior{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -163,7 +166,7 @@ width: 60%;
     height: 85%;
 }
 .acercaDeMi_superior .acercaDeMi_texto{
-  border: 15px solid black;
+  /* border: 15px solid black; */
   width: 35%;
   height: 75%;
   display: flex;
@@ -174,6 +177,7 @@ width: 60%;
 .acercaDeMi_superior .acercaDeMi_texto p{
    line-height: 1.5;
    text-align: left;
+   margin: 10px;
   }
   .acercaDeMi_superior .acercaDeMi_texto_redes{
     display: flex;
@@ -183,9 +187,10 @@ width: 60%;
     margin: 0 1.5rem;
    font-size: xx-large;
    text-align: start;
+   color: #7E50DB;
   }
 .acercaDeMi_superior .acercaDeMi_img{
-    border: 5px solid rgb(24, 4, 245);
+    /* border: 5px solid rgb(24, 4, 245); */
     width: 35%;
     height: 75%;
 }
@@ -198,11 +203,11 @@ width: 60%;
 }
 
 .acercaDeMi_inferior{
-    border: 5px solid rgb(4, 4, 4);
+    /* border: 5px solid rgb(4, 4, 4); */
     height: 15%;
 }
 .acercaDeMi_inferior .acercaDeMi_btn{
-    border: 5px solid violet;
+    /* border: 5px solid violet; */
     width: 50%;
     height: 100%;
     display: flex;
@@ -227,13 +232,13 @@ width: 60%;
 .misProyectos{
     width: 100%;
     height:auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     text-align: center;
     justify-content: center;
 }
 .misProyectos article{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -243,32 +248,37 @@ width: 60%;
 .misProyectos_proyectos{
     width: 70%;
     height: 100vh;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .proyecto{
+    border: 1px solid #333;
     display: flex;
     flex-direction: column;
-    border: 2px solid violet;
     width: 35%;
     height: 45%;
     margin: 1rem 2rem;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+
 }
 .proyecto_img{
 width: 100%;
 height: 60%;
-border: 2px solid green;
+/* border: 2px solid green; */
 }
 .proyecto_img img{
 width: 100%;
 height: 100%;
 object-fit: cover;
+border-radius: 15px;
 }
 .proyecto_texto{
   height: 40%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,13 +294,13 @@ font-size: 16px;
 font-weight: bold;
 }
 .proyecto_texto_redes{
-border: 2px solid red;
+/* border: 2px solid red; */
 width: 50%;
 display: flex;
 justify-content: space-around;
 }
 .proyecto_texto_redes .red_social{
-border: 2px solid blue;
+/* border: 2px solid blue; */
 padding: .5rem;
 width: 30%;
 border-radius: 15px;
@@ -305,7 +315,7 @@ color: #ffffff;
     justify-content: center;
 }
 .proyecto_texto_btn .btn{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height:2rem;
     padding:0 ;
     font-size: medium;
@@ -315,7 +325,7 @@ color: #ffffff;
 
 
 .contacto{
-    border: 5px solid black;
+    /* border: 5px solid black; */
     height: 100vh;
     width: 100%;
    
@@ -324,7 +334,7 @@ color: #ffffff;
 
 .contacto_form{
     background-color: #F2F2F2;
-    border: 10px solid black;
+    /* border: 10px solid black; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -336,11 +346,13 @@ color: #ffffff;
 .form-container {
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: 100%;
     height: auto;
     max-width: 1000px;
     box-shadow: 2px 4px 5.5px rgb(0, 0, 0);
+    margin: 10px;  
+    border-radius: 15px;  
 }
 
 h2 {
@@ -352,9 +364,9 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    border: 22px solid red;
     height:90%;
     justify-content: space-around;
+    margin: 10px;
 }
 
 .input-group {
@@ -363,7 +375,7 @@ form {
 }
 
 .input-field {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -401,21 +413,21 @@ footer{
 }
 
 .footer_superior{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
  justify-content: space-around;
+ padding: 10px 0;
 }
 .footer_col_1{
     font-size: 16px;
     width: 40%;
     display: flex;
     align-items: center;
-    border: 2px solid red;
+    border-right: 1px solid #555;
 
 }
 .footer_col_2{
-    border: 2px solid red;
-
+    border-right: 1px solid #555;
     width: 20%;
 }
 .footer_col_2 ol li {
@@ -431,12 +443,14 @@ footer{
 width: 10%;
 }
 .footer_col_3 .redes{
-border: 2px solid red;
+/* border: 2px solid red; */
 width: 100%;
 height: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+color: #7E50DB;
+
 }
 .footer_col_3 .redes i{
 font-size: 16px;
@@ -455,6 +469,9 @@ font-size: 16px;
     }
     .nav_mobile .bi-list{
         font-size: xx-large;
+        width: 100%;
+        background-color: #7E50DB;
+        color: #F2F2F2;
     }
     .nav_mobile .logo{
         display: flex;
@@ -462,6 +479,7 @@ font-size: 16px;
     }
     .nav_mobile .logo .bi-x-lg{
   font-size: xx-large;
+  color: #F2F2F2;
     }
     .nav_mobile .logo span{
     margin: 0;
@@ -479,7 +497,7 @@ font-size: 16px;
     }
     
     .menu_mobile ol{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 80%;
         display: flex;
         flex-direction: column;
@@ -574,12 +592,10 @@ font-size: 16px;
         width: 100%;
     }
     .acercaDeMi_superior .acercaDeMi_img{
-        width: 100%;
+        width: 50%;
         height: 50%;
     }
-    .acercaDeMi_superior .acercaDeMi_img{
-       object-fit: contain;
-    }
+   
     .acercaDeMi_inferior .acercaDeMi_btn{
         width: 100%;
     }
@@ -591,7 +607,7 @@ font-size: 16px;
 @media (max-width: 524px) {
 
     .presentacion_img {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
         height: 70%;
         position: absolute;
@@ -602,7 +618,7 @@ font-size: 16px;
         object-fit: contain;
     }
     .presentacion_texto {
-        border: 5px solid rgb(43, 255, 0);
+        /* border: 5px solid rgb(43, 255, 0); */
         height: 70%;
         width: 90%;
         display: flex;
@@ -638,7 +654,24 @@ height: auto;
   
 }
 .footer_col_2 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 40%;
 }
 }
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .misProyectos_proyectos {
+        width: 100%;
+        height: auto;
+    }
+    .contacto_form {
+       height: auto;
+    }
+    .contacto {
+        /* border: 5px solid black;  */
+        height:auto;
+        width: 100%;
+    }
+    .footer_superior {
+      height: auto;
+    }
+  }
