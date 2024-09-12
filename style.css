@@ -50,8 +50,8 @@
     background-color: #7E50DB;
     display: flex;
     flex-direction: column;
-    top: -100%;
-    transition: top 2s;
+    top: -200%;
+    transition: top 2.5s;
 }
 
 .logo{
