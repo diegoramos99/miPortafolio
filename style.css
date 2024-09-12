@@ -236,6 +236,7 @@ width: 60%;
     display: flex;
     text-align: center;
     justify-content: center;
+    padding-bottom: 5rem;
 }
 .misProyectos article{
     /* border: 2px solid red; */
@@ -579,6 +580,7 @@ font-size: 16px;
 
     .acercaDeMi{
         height: auto;
+        padding: 5rem 0;
     }
     .acercaDeMi_superior {
         display: flex;

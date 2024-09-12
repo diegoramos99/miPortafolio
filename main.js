@@ -13,13 +13,13 @@ burger.addEventListener("click",()=>{
 cruz.addEventListener("click",()=>{
     burger.style.display="block"
    
-       menu.style.top="-100%"
+       menu.style.top="-200%"
 })
 
 li.forEach(element => {
 let a=element.querySelector("a")
 a.addEventListener('click',()=>{
-    menu.style.top="-100%"
+    menu.style.top="-200%"
     burger.style.display="block"
 })
 });
