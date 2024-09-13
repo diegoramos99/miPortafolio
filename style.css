@@ -467,11 +467,12 @@ font-size: 16px;
     .nav_mobile{
         text-align: end;
         display: block;
+        width: 100%;
+        background-color: #7E50DB;
     }
     .nav_mobile .bi-list{
         font-size: xx-large;
         width: 100%;
-        background-color: #7E50DB;
         color: #F2F2F2;
     }
     .nav_mobile .logo{
@@ -660,7 +661,22 @@ height: auto;
     width: 40%;
 }
 }
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .nav {
+ 
+        height: auto;
+    }
+    .presentacion {
+     
+        /* border: 2px solid rgb(0, 221, 255); */
+        height: auto;
+    
+    }
+    .acercaDeMi {
+        /* border: 5px solid red; */
+        width: 100%;
+        height: auto;
+    }
     .misProyectos_proyectos {
         width: 100%;
         height: auto;
